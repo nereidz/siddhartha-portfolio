@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Siddhartha Shrestha — Engineering Leader</title>
+    <meta
+      name="description"
+      content="Engineering leader and data engineer based in Auckland. Healthcare data, interoperability, and technical leadership."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Outfit:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <a class="nav-mark" href="#top">SS</a>
+      <nav>
+        <a href="#pipeline">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <img
+          class="portrait"
+          src="assets/portrait.jpg"
+          alt="Portrait of Siddhartha Shrestha"
+        />
+        <div class="hero-copy">
+          <p class="eyebrow">Auckland, New Zealand</p>
+          <h1>Siddhartha Shrestha</h1>
+          <p class="role">Engineering Manager · Data Engineer</p>
+          <p class="lede">
+            I lead teams that build healthcare data and software platforms —
+            from interoperability and Databricks pipelines to AI-assisted
+            engineering. Nine years from graduate trainee to engineering
+            manager.
+          </p>
+          <div class="actions">
+            <a class="btn primary" href="mailto:syd.earth@gmail.com">Email me</a>
+            <a
+              class="btn"
+              href="https://www.linkedin.com/in/siddharthshrestha/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="pipeline">
+        <h2>Data in motion</h2>
+        <p class="section-lede">
+          Healthcare payer data flowing from source systems through Databricks
+          into analytics that people actually use.
+        </p>
+
+        <div class="lab">
+          <article class="pipe-card">
+            <p class="lab-kicker">Bronze → Silver → Gold</p>
+            <svg
+              class="pipe-svg"
+              viewBox="0 0 900 200"
+              role="img"
+              aria-label="Animated data pipeline from sources through Spark to a dashboard"
+            >
+              <defs>
+                <linearGradient id="flow-stroke" x1="0" x2="1">
+                  <stop offset="0" stop-color="#c46a4a" />
+                  <stop offset="1" stop-color="#9a3b24" />
+                </linearGradient>
+              </defs>
+              <path
+                class="pipe-track"
+                d="M70 92 H830"
+                fill="none"
+                stroke="#d9d0c3"
+                stroke-width="3"
+              />
+              <path
+                class="pipe-flow"
+                d="M70 92 H830"
+                fill="none"
+                stroke="url(#flow-stroke)"
+                stroke-width="3"
+                stroke-dasharray="12 16"
+              />
+              <circle class="packet" r="7">
+                <animateMotion dur="3.6s" repeatCount="indefinite" path="M70 92 H830" />
+              </circle>
+              <circle class="packet" r="7">
+                <animateMotion
+                  dur="3.6s"
+                  begin="-1.2s"
+                  repeatCount="indefinite"
+                  path="M70 92 H830"
+                />
+              </circle>
+              <circle class="packet" r="7">
+                <animateMotion
+                  dur="3.6s"
+                  begin="-2.4s"
+                  repeatCount="indefinite"
+                  path="M70 92 H830"
+                />
+              </circle>
+              <g class="node" transform="translate(70 92)">
+                <circle r="34" />
+                <text y="6">FHIR</text>
+              </g>
+              <g class="node" transform="translate(260 92)">
+                <circle r="34" />
+                <text y="6">S3</text>
+              </g>
+              <g class="node" transform="translate(450 92)">
+                <circle r="34" />
+                <text y="6">Spark</text>
+              </g>
+              <g class="node" transform="translate(640 92)">
+                <circle r="34" />
+                <text y="6">Lake</text>
+              </g>
+              <g class="node" transform="translate(830 92)">
+                <circle r="34" />
+                <text y="6">BI</text>
+              </g>
+            </svg>
+            <ol class="pipe-legend">
+              <li>Sources</li>
+              <li>Ingest</li>
+              <li>Transform</li>
+              <li>Reconcile</li>
+              <li>Serve</li>
+            </ol>
+          </article>
+
+          <article class="dash" aria-label="Sample healthcare quality dashboard">
+            <header class="dash-head">
+              <span>Quality Intelligence</span>
+              <span class="live"><i></i> running</span>
+            </header>
+            <div class="kpis">
+              <div>
+                <p class="kpi-label">Daily volume</p>
+                <p class="kpi-value" data-count="12.4" data-suffix="M">12.4M</p>
+              </div>
+              <div>
+                <p class="kpi-label">Reconciled</p>
+                <p class="kpi-value" data-count="99.2" data-suffix="%">99.2%</p>
+              </div>
+              <div>
+                <p class="kpi-label">FHIR maps</p>
+                <p class="kpi-value" data-count="148" data-suffix="">148</p>
+              </div>
+            </div>
+            <div class="chart" aria-hidden="true">
+              <span style="--h: 42%"></span>
+              <span style="--h: 58%"></span>
+              <span style="--h: 46%"></span>
+              <span style="--h: 71%"></span>
+              <span style="--h: 63%"></span>
+              <span style="--h: 88%"></span>
+              <span style="--h: 74%"></span>
+              <span style="--h: 91%"></span>
+              <span style="--h: 67%"></span>
+              <span style="--h: 80%"></span>
+              <span style="--h: 95%"></span>
+              <span style="--h: 78%"></span>
+            </div>
+            <ul class="jobs" id="jobs">
+              <li><span class="ok">ok</span> claims_fhir_map · 2.1m rows</li>
+              <li><span class="run">run</span> adls_bronze_ingest · Spark</li>
+              <li><span class="ok">ok</span> risk_adjust_gold · Azure</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience">
+        <h2>Experience</h2>
+        <ol class="timeline">
+          <li>
+            <span class="when">2026</span>
+            <div>
+              <h3>Engineering Manager</h3>
+              <p class="org">Abacus Insights Nepal</p>
+              <p>
+                Led data engineering, architecture, AI adoption, and FHIR
+                interoperability for enterprise healthcare payer platforms on
+                Databricks, AWS, and Azure.
+              </p>
+            </div>
+          </li>
+          <li>
+            <span class="when">2025 – 2026</span>
+            <div>
+              <h3>Technical Product Owner</h3>
+              <p class="org">Infinite Software Services</p>
+              <p>
+                Owned delivery of healthcare platforms across Quality
+                Intelligence, Risk Adjustment, and Retail — requirements,
+                architecture, and Java/Spring Boot teams.
+              </p>
+            </div>
+          </li>
+          <li>
+            <span class="when">2024 – 2025</span>
+            <div>
+              <h3>Principal Software Engineer &amp; Technical Lead</h3>
+              <p class="org">Infinite Software Services</p>
+              <p>
+                Directed platform modernisation and large-scale healthcare data
+                migration across AWS, Azure, and Databricks.
+              </p>
+            </div>
+          </li>
+          <li>
+            <span class="when">2016 – 2024</span>
+            <div>
+              <h3>Software Engineer → Senior Software Engineer</h3>
+              <p class="org">Cotiviti Nepal</p>
+              <p>
+                Built healthcare analytics platforms, REST services, and ETL
+                pipelines used for reporting and operational decision-making.
+              </p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section id="skills">
+        <h2>Focus</h2>
+        <ul class="tags">
+          <li>Engineering leadership</li>
+          <li>Data engineering</li>
+          <li>HL7 FHIR</li>
+          <li>Databricks / Spark</li>
+          <li>Python &amp; SQL</li>
+          <li>Java / Spring Boot</li>
+          <li>AWS &amp; Azure</li>
+          <li>AI adoption</li>
+        </ul>
+        <div class="edu">
+          <p>
+            <strong>MBA (Executive)</strong> · 2024
+            <span aria-hidden="true">·</span>
+            <strong>BIT</strong> · 2016
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <h2>Let’s talk</h2>
+      <p>Open to technical leadership and data engineering roles in New Zealand.</p>
+      <div class="actions">
+        <a class="btn primary" href="mailto:syd.earth@gmail.com">syd.earth@gmail.com</a>
+        <a class="btn" href="tel:+642902733305">+64 029 0273 3305</a>
+      </div>
+      <p class="fine">© 2026 Siddhartha Shrestha</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
